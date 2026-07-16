@@ -51,18 +51,18 @@
 
         layer0 {
             bindings = <
-&lt 4 EQUAL         &lt 3 Q         &kp W               &kp E                    &kp R        &kp T           &kp Y            &kp U        &kp I           &kp O                &kp P                        &lt 5 MINUS
-&mt LEFT_SHIFT TAB  &hm LEFT_GUI A  &hm LEFT_CONTROL S  &hm LEFT_ALT D           &kp F        &kp G           &kp H            &kp J        &hm RALT K      &hm RIGHT_CONTROL L  &hm RIGHT_COMMAND SEMICOLON  &hm RSHFT BACKSLASH
-&kp LEFT_GUI        &kp Z           &kp X               &kp C                    &kp V        &kp B           &kp N            &kp M        &kp COMMA       &kp DOT              &mt LA(LCTRL) SLASH          &lt 4 SQT
-                                                        &mt LEFT_CONTROL ESCAPE  &lt 1 ENTER  &mt LALT TAB    &lt 1 BACKSPACE  &lt 2 SPACE  &mt RALT GRAVE
+&lt 4 ESCAPE        &lt 3 Q         &kp W               &kp E                   &kp R        &kp T           &kp Y            &kp U        &kp I           &kp O                &kp P                        &lt 5 MINUS
+&mt LEFT_SHIFT TAB  &hm LEFT_GUI A  &hm LEFT_CONTROL S  &hm LEFT_ALT D          &kp F        &kp G           &kp H            &kp J        &hm RALT K      &hm RIGHT_CONTROL L  &hm RIGHT_COMMAND SEMICOLON  &hm RSHFT BACKSLASH
+&kp LEFT_GUI        &kp Z           &kp X               &kp C                   &kp V        &lt 1 B         &kp N            &kp M        &kp COMMA       &kp DOT              &mt LA(LCTRL) SLASH          &lt 4 SQT
+                                                        &mt LEFT_CONTROL EQUAL  &lt 1 ENTER  &mt LALT TAB    &lt 1 BACKSPACE  &lt 2 SPACE  &mt RALT GRAVE
             >;
         };
 
         numbers_fs {
             bindings = <
-&kp ESCAPE      &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp N7  &kp N8  &kp N9  &kp MINUS   &kp EQUAL     &kp ESCAPE
-&kp LEFT_SHIFT  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp N4  &kp N5  &kp N6  &kp SLASH   &kp ASTERISK  &kp BACKSPACE
-&trans          &kp F11  &kp F12  &trans  &trans  &trans     &kp N1  &kp N2  &kp N3  &kp PERIOD  &kp COMMA     &kp ENTER
+&kp ESCAPE      &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp N7  &kp N8  &kp N9  &kp EQUAL     &kp PLUS  &kp MINUS
+&kp LEFT_SHIFT  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans    &kp BACKSPACE
+&trans          &kp F11  &kp F12  &trans  &trans  &trans     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans    &kp ENTER
                                   &trans  &trans  &trans     &trans  &kp N0  &trans
             >;
         };
@@ -78,9 +78,9 @@
 
         coding_symb {
             bindings = <
-&kp LS(F6)  &none   &kp RG(RS(R))  &none   &none   &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE            &kp RIGHT_BRACE            &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans         &trans  &none   &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                    &trans                     &kp GRAVE         &kp APOSTROPHE
-&trans      &none   &none          &trans  &none   &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RS(RG(LEFT_BRACKET))  &kp RS(RG(RIGHT_BRACKET))  &kp RG(RA(LEFT))  &kp RG(RA(RIGHT))
+&kp LS(F6)  &none   &kp RG(RS(R))  &none   &none   &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans         &trans  &none   &none     &trans                &kp UP_ARROW           &trans           &trans           &trans            &trans
+&trans      &none   &none          &trans  &none   &trans    &kp LEFT_ARROW        &kp DOWN_ARROW         &kp RIGHT_ARROW  &trans           &trans            &trans
                                    &trans  &trans  &trans    &trans                &trans                 &trans
             >;
         };
