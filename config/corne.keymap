@@ -59,8 +59,8 @@
             key-positions = <21 22>;
         };
 
-        del {
-            bindings = <&kp DEL>;
+        backsp {
+            bindings = <&kp BACKSPACE>;
             key-positions = <6 7>;
         };
     };
