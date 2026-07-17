@@ -58,6 +58,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <21 22>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <6 7>;
+        };
     };
 
     keymap {
