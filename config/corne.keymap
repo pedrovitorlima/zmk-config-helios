@@ -49,11 +49,6 @@
     combos {
         compatible = "zmk,combos";
 
-        enter_right {
-            bindings = <&kp ENTER>;
-            key-positions = <8 9>;
-        };
-
         underscore_right {
             bindings = <&kp MINUS>;
             key-positions = <11 10>;
@@ -67,6 +62,11 @@
         space {
             bindings = <&kp SPACE>;
             key-positions = <16 19>;
+        };
+
+        backlash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <23 22>;
         };
     };
 
@@ -102,10 +102,10 @@
 
         coding_symb {
             bindings = <
-&trans  &trans  &kp LA(LG(LEFT_ARROW))  &kp RG(RA(RIGHT))  &none   &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans                  &trans             &none   &none     &kp LEFT              &kp UP_ARROW           &kp DOWN_ARROW  &kp RIGHT        &kp DELETE        &trans
-&trans  &none   &none                   &trans             &none   &trans    &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN   &kp END          &trans            &trans
-                                        &trans             &trans  &trans    &trans                &trans                 &trans
+&trans  &trans  &kp LA(LG(LEFT_ARROW))  &kp RG(RA(RIGHT))     &kp LG(W)  &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans  &trans                  &trans                &none      &none     &kp LEFT              &kp UP_ARROW           &kp DOWN_ARROW            &kp RIGHT        &kp DELETE        &trans
+&trans  &none   &none                   &trans                &none      &trans    &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN             &kp END          &trans            &trans
+                                        &kp LS(LG(NUMBER_4))  &trans     &trans    &trans                &trans                 &kp LG(LC(LS(NUMBER_4)))
             >;
         };
 
